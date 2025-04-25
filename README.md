@@ -17,8 +17,7 @@
 <br/>
 
 [![Open Bounties](https://img.shields.io/endpoint?url=https%3A%2F%2Fconsole.algora.io%2Fapi%2Fshields%2FCapSoftware%2Fbounties%3Fstatus%3Dopen)](https://console.algora.io/org/CapSoftware/bounties?status=open)
-
-Cap is the open source alternative to Loom. It's a video messaging tool that allows you to record, edit and share videos in seconds.
+ It's a video messaging tool that allows you to record, edit and share videos in seconds.
 
 <img src="https://raw.githubusercontent.com/CapSoftware/Cap/refs/heads/main/apps/web/public/landing-cover.png"/>
 
