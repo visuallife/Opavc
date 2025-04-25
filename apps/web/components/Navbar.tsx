@@ -3,7 +3,6 @@
 import {
   Button,
   ListItem,
-  Logo,
   NavigationMenu,
   NavigationMenuContent,
   NavigationMenuItem,
@@ -21,72 +20,24 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { seoPages } from "../lib/seo-pages";
 
-const Links = [
-  {
-    label: "Product",
-    dropdown: [
-      {
-        label: "Download App",
-        sub: "Downloads for macOS & Windows",
-        href: "/download",
-      },
-      {
-        label: "Open Source",
-        sub: "Cap is open source and available on GitHub",
-        href: "https://github.com/CapSoftware/Cap",
-      },
-      {
-        label: "Self-host Cap",
-        sub: "Self-host Cap on your own infrastructure",
-        href: "/self-hosting",
-      },
-      {
-        label: "Join the community",
-        sub: "Join the Cap community on Discord",
-        href: "https://cap.link/discord",
-      },
-    ],
-  },
+type Link = {
+  label: string;
+  href: string;
+  dropdown?: Array<{
+    label: string;
+    href: string;
+    sub: string;
+  }>;
+};
+
+const Links: Link[] = [
   {
     label: "Download",
     href: "/download",
   },
   {
-    label: "Help",
-    dropdown: [
-      {
-        label: "Documentation",
-        sub: "Documentation for using Cap",
-        href: "/docs",
-      },
-      {
-        label: "FAQs",
-        sub: "Frequently asked questions about Cap",
-        href: "/faq",
-      },
-      {
-        label: "Email support",
-        sub: "Support via email",
-        href: "mailto:hello@cap.so",
-      },
-      {
-        label: "Chat support",
-        sub: "Support via chat",
-        href: "https://discord.gg/y8gdQ3WRN3",
-      },
-    ],
-  },
-  {
-    label: "Pricing",
-    href: "/pricing",
-  },
-  {
     label: "About",
     href: "/about",
-  },
-  {
-    label: "Blog",
-    href: "/blog",
   },
 ];
 
@@ -114,7 +65,11 @@ export const Navbar = ({ auth }: { auth: boolean }) => {
         <div className="flex justify-between items-center mx-auto max-w-3xl h-full transition-all">
           <div className="flex items-center">
             <Link passHref href="/">
-              <Logo className="w-[90px]" />
+              <img
+                src="/design/OPAVC Logo.svg"
+                alt="OPAVC logo"
+                className="w-[120px] h-[40px] object-contain"
+              />
             </Link>
             <div className="hidden md:block">
               <NavigationMenu>
@@ -163,7 +118,7 @@ export const Navbar = ({ auth }: { auth: boolean }) => {
             </div>
           </div>
           <div className="hidden items-center space-x-2 sm:flex">
-            <Button
+            {/* <Button
               variant="white"
               href="https://github.com/CapSoftware/Cap"
               size="md"
@@ -171,7 +126,7 @@ export const Navbar = ({ auth }: { auth: boolean }) => {
               icon={<FontAwesomeIcon icon={faGithub} />}
             >
               Github
-            </Button>
+            </Button> */}
             <Button
               variant="dark"
               href={auth === false ? "/login" : "/dashboard"}
@@ -195,7 +150,11 @@ export const Navbar = ({ auth }: { auth: boolean }) => {
           pt-3 pb-12 sticky top-0 flex items-center justify-between"
           >
             <Link passHref href="/">
-              <Logo className="w-[90px] h-auto" />
+              <img
+                src="/design/OPAVC Logo.svg"
+                alt="OPAVC logo"
+                className="w-[120px] h-[40px] object-contain"
+              />
             </Link>
             <button onClick={() => setShowMobileMenu(!showMobileMenu)}>
               <X className="w-[28px] h-[28px]" />

@@ -34,7 +34,7 @@ export function ReadyToGetStarted() {
             Beautiful screen recordings, owned by you.
           </h2>
           <p className="text-[1rem] sm:text-lg text-white">
-            Cap is the open source alternative to Loom. Lightweight, powerful,
+            OPAVC is Lightweight, powerful,
             and cross-platform. Record and share securely in seconds with custom
             S3 bucket support.
           </p>

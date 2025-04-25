@@ -39,6 +39,20 @@ export const DownloadPage = () => {
   };
 
   return (
+    <div className="wrapper">
+      <div className="mt-[60px] mb-32">
+        <div className="flex flex-col items-center justify-center text-center mb-16">
+          <div className="mb-8">
+            <svg width="180" height="60" viewBox="0 0 180 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="30" cy="30" r="28" fill="#8B5CF6"/>
+              <text x="70" y="42" fill="currentColor" className="text-4xl font-bold">OPAVC</text>
+            </svg>
+          </div>
+          <h1 className="text-4xl font-bold mb-4">Download OPAVC</h1>
+          <p className="text-gray-600 max-w-xl">
+            OPAVC is available for Windows and macOS. Download now and start recording!
+          </p>
+        </div>
     <div className="pt-32 pb-16 wrapper wrapper-sm md:py-32">
       <div className="space-y-4 text-center">
         {/* Debug toggle button in top-right corner */}
@@ -94,7 +108,7 @@ export const DownloadPage = () => {
         )}
 
         <h1 className="text-2xl fade-in-down animate-delay-1 md:text-4xl">
-          Download Cap
+              Download OPAVC
         </h1>
         <p className="px-4 text-sm fade-in-down animate-delay-2 md:text-base md:px-0">
           The quickest way to share your screen. Pin to your dock and record in
@@ -129,8 +143,8 @@ export const DownloadPage = () => {
                   style={{ maxWidth: "300px" }}
                 />
                 <p className="text-sm text-gray-400 mt-2">
-                  Whilst Cap for Windows is in early beta, after downloading and
-                  running the app, follow the steps above to whitelist Cap on
+                      Whilst OPAVC for Windows is in early beta, after downloading and
+                      running the app, follow the steps above to whitelist OPAVC on
                   your PC.
                 </p>
               </div>
@@ -225,6 +239,8 @@ export const DownloadPage = () => {
             >
               Recording Software
             </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
