@@ -479,7 +479,7 @@ function Startup(props: { onClose: () => void }) {
                 />
               </div>
               <h1 class="text-5xl md:text-5xl font-bold mb-4 drop-shadow-[0_0_20px_rgba(0,0,0,0.2)]">
-                Welcome to OPAVC
+                Welcome to Cap
               </h1>
               <p class="text-2xl opacity-80 max-w-md mx-auto drop-shadow-[0_0_20px_rgba(0,0,0,0.2)]">
                 Beautiful screen recordings, owned by you.

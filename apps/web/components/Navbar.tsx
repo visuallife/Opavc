@@ -35,10 +35,6 @@ const Links: Link[] = [
     label: "Download",
     href: "/download",
   },
-  {
-    label: "About",
-    href: "/about",
-  },
 ];
 
 export const Navbar = ({ auth }: { auth: boolean }) => {
@@ -197,7 +193,7 @@ export const Navbar = ({ auth }: { auth: boolean }) => {
                   </Link>
                 </li>
                 <li>
-                  <Link
+                  {/* <Link
                     onClick={() => {
                       setShowMobileMenu(false);
                     }}
@@ -205,7 +201,7 @@ export const Navbar = ({ auth }: { auth: boolean }) => {
                     passHref
                   >
                     About
-                  </Link>
+                  </Link> */}
                 </li>
                 <li>
                   <Link

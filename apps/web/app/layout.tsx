@@ -1,6 +1,6 @@
 import "@/app/globals.css";
 import { BentoScript } from "@/components/BentoScript";
-import { Footer } from "@/components/Footer";
+// import { Footer } from "@/components/Footer";
 import { Navbar } from "@/components/Navbar";
 import { getCurrentUser } from "@cap/database/auth/session";
 import crypto from "crypto";
@@ -103,7 +103,7 @@ export default async function RootLayout({
               <main className="overflow-hidden w-full">
                 <Navbar auth={session ? true : false} />
                 {children}
-                <Footer />
+                {/* <Footer /> */}
               </main>
               <BentoScript user={session} />
             </Providers>
